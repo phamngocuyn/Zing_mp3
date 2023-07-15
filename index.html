@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing</title>
+    <link rel="shortcut icon" type="image/png" href="./image/brand_TPD.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./library/slick/slick.css">
+    <link rel="stylesheet" href="./library/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    
+</head> 
+<body>
+    <div id="app" class="app">
+        <div class="sidebar on-tab-mob">
+            <div class="btn-navigation show-mobile">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="sidebar__logo">
+                <img src="./image/logo_.png" alt="" class="show-mobile">                
+                <img src="./image/logo.png" class="sidebar__logo--img hide-mobile">
+                <h1 class="sidebar__logo--text hide-mobile">mp3</h1>
+            </div>
+            <nav class="nav-sidebar nav-main">
+                <ul class="list-sidebar list-main">
+                    <li class="item-sidebar item-main">
+                        <a href="#">
+                            <i class="far fa-address-book"></i>
+                            <span class="hide-mobile">Cá nhân</span>
+                        </a>
+                    </li>
+                    <li class="item-sidebar item-main item-main-active">
+                        <a href="#">
+                            <i class="fab fa-algolia"></i>
+                            <span class="hide-mobile">Khám phá</span>
+                        </a>
+                    </li>
+                    <li class="item-sidebar item-main">
+                        <a href="#">
+                            <i class="fab fa-affiliatetheme"></i>
+                            <span class="hide-mobile">Zingchart</span>
+                        </a>
+                    </li>
+                    <li class="item-sidebar item-main">
+                        <a href="#">
+                            <i class="fas fa-anchor"></i>
+                            <span class="hide-mobile">Radio</span>
+                        </a>
+                    </li>
+                    <li class="item-sidebar item-main">
+                        <a href="#">
+                            <i class="fab fa-app-store"></i>
+                            <span class="hide-mobile">Theo dõi</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="list-sub-sidebar">
+                <nav class="nav-sidebar nav-sub">
+                    <ul class="list-sidebar list-sub">
+                        <li class="item-sidebar item-sub">
+                            <a href="#">
+                                <i class="fas fa-music"></i>
+                                <span class="hide-mobile">Nhạc mới</span>
+                            </a>
+                        </li>
+                        <li class="item-sidebar item-sub">
+                            <a href="#">
+                                <i class="fab fa-buromobelexperte"></i>
+                                <span class="hide-mobile">Thể loại</span>
+                            </a>
+                        </li>
+                        <li class="item-sidebar item-sub">
+                            <a href="#">
+                                <i class="far fa-star"></i>
+                                <span class="hide-mobile">Top 100</span>
+                            </a>
+                        </li>
+                        <li class="item-sidebar item-sub">
+                            <a href="#">
+                                <i class="far fa-play-circle"></i>
+                                <span class="hide-mobile">MV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="banner-vip-sidebar hide-mobile">
+                    <div class="text">
+                        Nghe nhạc không quảng cáo cùng kho nhạc Vip
+                    </div>
+                    <a href="#">mua Vip</a>
+                </div>
+        
+                <div class="my-playlist-sidebar">
+                    <div class="my-playlist-title">
+                        <div class="title hide-mobile">
+                            Thư viện
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                    </div>
+                    <nav class="nav-sidebar my-nav">
+                        <ul class="list-sidebar my-list">
+                            <li class="item-sidebar my-item">
+                                <a href="#">
+                                    <i class="icon">
+                                        <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg">
+                                    </i>
+                                    <span class="hide-mobile">Bài hát</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-sidebar">
+                            <li class="item-sidebar">
+                                <a href="#">
+                                    <i class="icon">
+                                        <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg">
+                                    </i>
+                                    <span class="hide-mobile">Playlist</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-sidebar">
+                            <li class="item-sidebar">
+                                <a href="#">
+                                    <i class="icon">
+                                        <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg">
+                                    </i>
+                                    <span class="hide-mobile">Gần đây</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+            <div class="add-playlist-sidebar hide-mobile">
+                <button>
+                    <i class="fas fa-plus"></i>
+                    <span>
+                        tạo playlist mới
+                    </span>
+                </button>
+            </div>
+            <div class="modal">
+                <div class="modal__main modal-add-playlist">
+                    <div class="modal-add-playlist__content">
+                        <h3 class="main-title">Tạo playlist mới</h3>
+                        <input type="text" placeholder="Nhập tên playlist">
+                        <div class="option">
+                            <div>
+                                <h3 class="title">Công khai</h3>
+                                <h3 class="subtitle">Mọi người đều có thể nhìn thấy playlist</h3>
+                            </div>
+                            <label for="tg1" class="toggle toggle-add-play-list">
+                                <input id="tg1" type="checkbox" checked>
+                                <span class="slider circle"></span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <div>
+                                <h3 class="title">Phát ngẫu nhiên</h3>
+                                <h3 class="subtitle">Luôn luôn phát ngẫu nhiên</h3>
+                            </div>
+                            <label for="tg2" class="toggle toggle-add-play-list">
+                                <input id="tg2" type="checkbox" checked>
+                                <span class="slider circle"></span>
+                            </label>
+                        </div>
+                        <button>
+                            <span>Tạo playlist</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <header class="header">
+                <div class="header-left">
+                    <div class="navigation-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="header-left__search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Nhập tên bài hát, ca sĩ hoặc MV,...">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="topic header-right__item">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="upload header-right__item">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <div class="setting header-right__item">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="user header-right__item">
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-container">
+                <div class="gallery gird">
+                    <div class="gallery-container row">
+                        <div class="gallery__item">
+                            <img src="https://photo-zmp3.zadn.vn/banner/c/b/c/c/cbcc8499d29e75f02fc824b29088950a.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="https://photo-zmp3.zadn.vn/banner/0/a/9/f/0a9fb17f60a0f67c1aeb051fdf87955c.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="https://photo-zmp3.zadn.vn/banner/9/3/c/7/93c731294c697e3153981e3f59ed5fd5.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="https://photo-zmp3.zadn.vn/banner/3/7/8/6/378688d2e04ca4d276d6e95a92a96044.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-top100">
+                    <header>
+                        <h3>Hôm Nay Nghe Gì</h3>
+                    </header>
+                    <div class="content-top100-container">
+                        <div class="content-top100-container__list grid">
+                            <ul class="row">
+                                <li class="col f-2-4 l-3 m-4 c-6"><a href="#">
+                                    <div class="img">
+                                        <div class="nag">
+                                            <i class="far fa-heart"></i>
+                                            <i class="far fa-play-circle icon-main"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/9/b/2/69b2bf88060008757acee3df2fbcd96d.jpg" alt="">
+                                    </div>
+                                    <span>
+                                        Top 100 nhạc Hàn Quốc hay nhất 2021
+                                    </span>
+                                </a></li>
+                                <li class="col f-2-4 l-3 m-4 c-6"><a href="#">
+                                    <div class="img">
+                                        <div class="nag">
+                                            <i class="far fa-heart"></i>
+                                            <i class="far fa-play-circle icon-main"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/5/f/c/c5fc615c43215c6b72676f42767855ee.jpg" alt="">
+                                    </div>
+                                    <span>
+                                        Top 100 nhạc Hàn Quốc hay nhất 2021
+                                    </span>
+                                </a></li>
+                                <li class="col f-2-4 l-3 m-4 c-6"><a href="#">
+                                    <div class="img">
+                                        <div class="nag">
+                                            <i class="far fa-heart"></i>
+                                            <i class="far fa-play-circle icon-main"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/5/d/8/9/5d890d445e5ecff4d118a296440f1654.jpg" alt="">
+                                    </div>
+                                    <span>
+                                        Top 100 nhạc Hàn Quốc hay nhất 2021
+                                    </span>
+                                </a></li>
+                                <li class="col f-2-4 l-3 m-4 c-6"><a href="#">
+                                    <div class="img">
+                                        <div class="nag">
+                                            <i class="far fa-heart"></i>
+                                            <i class="far fa-play-circle icon-main"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/1/7/2/7172e5eef050a364accf3109a0f7477a.jpg" alt="">
+                                    </div>
+                                    <span>
+                                        Top 100 nhạc Hàn Quốc hay nhất 2021
+                                    </span>
+                                </a></li>
+                                <li class="col f-2-4 l-3 m-4 c-6"><a href="#"> 
+                                    <div class="img">
+                                        <div class="nag">
+                                            <i class="far fa-heart"></i>
+                                            <i class="far fa-play-circle icon-main"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/d/9/b/bd9b5e1bc7e4118b375b3a548f890d23.jpg" alt="">
+                                    </div>
+                                    <span>
+                                        Top 100 nhạc Hàn Quốc hay nhất 2021
+                                    </span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 306.3052837250048 -->
+                <div class="content-radio">
+                    <div class="grid">
+                        <h3>
+                            Radio trực tuyến
+                        </h3>
+                        <div class="container row">
+                            <div class="content-item item col f-2 l-2-4 m-3 c-4">
+                                <svg class="svg" width="100%" height="100%" viewBox="0 0 100 100"><circle class="svg-circle-bg" stroke="rgba(255, 255, 255, 0.2)" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5"></circle><circle class="svg-circle" stroke="#ff4b4a" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5" stroke-dasharray="306.3052837250048" stroke-dashoffset="50" style="transition: stroke-dashoffset 850ms ease-in-out 0s;"></circle></svg>
+                                <div class="img">
+                                    <div class="sub">
+                                        <span>live</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="avatar-singer">
+                                    </div>
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/5/b/8/8/5b88cb60806eff50fc1f431c2fef6abe.jpg" alt="">
+                                    <div class="nag">
+                                        <i class="far fa-play-circle icon-main"></i>
+                                    </div>
+                                </div>
+                                <span class="title">
+                                    <h3 class="main-title">Chạm</h3>
+                                    <h3 class="sub-title">
+                                        500 người đang nghe
+                                    </h3>
+                                </span>
+                            </div>
+                            <div class="content-item item col f-2 l-2-4 m-3 c-4">
+                                <svg class="svg" width="100%" height="100%" viewBox="0 0 100 100"><circle class="svg-circle-bg" stroke="rgba(255, 255, 255, 0.2)" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5"></circle><circle class="svg-circle" stroke="#ff4b4a" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5" stroke-dasharray="306.3052837250048" stroke-dashoffset="150" style="transition: stroke-dashoffset 850ms ease-in-out 0s;"></circle></svg>
+                                <div class="img">
+                                    <div class="nag">
+                                        <i class="far fa-play-circle icon-main"></i>
+                                    </div>
+                                    <div class="sub">
+                                        <span>live</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="avatar-singer">
+                                    </div>
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h3 class="main-title">Hồ Quang Hiếu</h3>
+                                    <h3 class="sub-title">
+                                        9832 người đang nghe
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="content-item item col f-2 l-2-4 m-3 c-4">
+                                <svg class="svg" width="100%" height="100%" viewBox="0 0 100 100"><circle class="svg-circle-bg" stroke="rgba(255, 255, 255, 0.2)" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5"></circle><circle class="svg-circle" stroke="#ff4b4a" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5" stroke-dasharray="306.3052837250048" stroke-dashoffset="250" style="transition: stroke-dashoffset 850ms ease-in-out 0s;"></circle></svg>
+                                <div class="img">
+                                    <div class="nag">
+                                        <i class="far fa-play-circle icon-main"></i>
+                                    </div>
+                                    <div class="sub">
+                                        <span>live</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="avatar-singer">
+                                    </div>
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/5/a/5/8/5a5813ac623cd00f9d15ce03b3c6659c.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h3 class="main-title">Tùng Sơn</h3>
+                                    <h3 class="sub-title">
+                                        598 người đang nghe
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="content-item item col f-2 l-2-4 m-3 c-4">
+                                <svg class="svg" width="100%" height="100%" viewBox="0 0 100 100"><circle class="svg-circle-bg" stroke="rgba(255, 255, 255, 0.2)" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5"></circle><circle class="svg-circle" stroke="#ff4b4a" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5" stroke-dasharray="306.3052837250048" stroke-dashoffset="90" style="transition: stroke-dashoffset 850ms ease-in-out 0s;"></circle></svg>
+                                <div class="img">
+                                    <div class="nag">
+                                        <i class="far fa-play-circle icon-main"></i>
+                                    </div>
+                                    <div class="sub">
+                                        <span>live</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="avatar-singer">
+                                    </div>
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/5/b/8/8/5b88cb60806eff50fc1f431c2fef6abe.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h3 class="main-title">Sơn Tùng</h3>
+                                    <h3 class="sub-title">
+                                        132 người đang nghe
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="content-item item col f-2 l-2-4 m-3 c-4">
+                                <svg class="svg" width="100%" height="100%" viewBox="0 0 100 100"><circle class="svg-circle-bg" stroke="rgba(255, 255, 255, 0.2)" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5"></circle><circle class="svg-circle" stroke="#ff4b4a" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5" stroke-dasharray="306.3052837250048" stroke-dashoffset="220" style="transition: stroke-dashoffset 850ms ease-in-out 0s;"></circle></svg>
+                                <div class="img">
+                                    <div class="nag">
+                                        <i class="far fa-play-circle icon-main"></i>
+                                    </div>
+                                    <div class="sub">
+                                        <span>live</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="avatar-singer">
+                                    </div>
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/f/d/7/9/fd79808d2180de9a421afa6aff38953e.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h3 class="main-title">Big Bang</h3>
+                                    <h3 class="sub-title">
+                                        987 người đang nghe
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="content-item item col f-2 l-2-4 m-3 c-4">
+                                <svg class="svg" width="100%" height="100%" viewBox="0 0 100 100"><circle class="svg-circle-bg" stroke="rgba(255, 255, 255, 0.2)" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5"></circle><circle class="svg-circle" stroke="#ff4b4a" fill="transparent" cx="50" cy="50" r="48.75" stroke-width="2.5" stroke-dasharray="306.3052837250048" stroke-dashoffset="180" style="transition: stroke-dashoffset 850ms ease-in-out 0s;"></circle></svg>
+                                <div class="img">
+                                    <div class="nag">
+                                        <i class="far fa-play-circle icon-main"></i>
+                                    </div>
+                                    <div class="sub">
+                                        <span>live</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="avatar-singer">
+                                    </div>
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/4/8/c/e/48cefd41cfc03533d52303190f47e6ef.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h3 class="main-title">V-pop</h3>
+                                    <h3 class="sub-title">
+                                        58 người đang nghe
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>   
+                
+                <div class="zing-chart">
+                    <div class="container">
+                        <div class="bg"></div>
+                        <div class="bg-img"></div>
+                        <h3 class="title">#ZingChart</h3>
+                        <div class="is-chart">
+                            <div class="zing-chart-left">
+                                <div class="top">
+                                    <div class="top-list">
+                                        <span class="top-list-number">1</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="">
+                                        <div class="detail">
+                                            <span class="name">Tất cả đã bị bao vây</span>
+                                            <span class="singer">Ngọc Uyn</span>
+                                        </div>
+                                    </div>
+                                    <span class="percent">49%</span>
+                                </div>
+                                <div class="top">
+                                    <div class="top-list">
+                                        <span class="top-list-number">2</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="">
+                                        <div class="detail">
+                                            <span class="name">Tất cả đã bị bao vây</span>
+                                            <span class="singer">Ngọc Uyn</span>
+                                        </div>
+                                    </div>
+                                    <span class="percent">23%</span>
+                                </div>
+                                <div class="top">
+                                    <div class="top-list">
+                                        <span class="top-list-number">3</span>
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="">
+                                        <div class="detail">
+                                            <span class="name">Tất cả đã bị bao vây</span>
+                                            <span class="singer">Ngọc Uyn</span>
+                                        </div>
+                                    </div>
+                                    <span class="percent">28%</span>
+                                </div>
+                                <div class="chart-btn">
+                                    <a class="chart-btn" href="#">Xem thêm</a>
+                                </div>
+                            </div>
+                            <div class="zing-chart-right">
+                                <div class="container">
+                                    <canvas id="canvas"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <div class="control-main">
+                <div class="song-detail">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg" alt="" class="img-song img-song-playing">
+                    <div class="song">
+                        <h3 class="song-name">
+                            Ôm trọn nỗi nhớ
+                        </h3>
+                        <a href="#" class="singer-name">
+                            rum
+                        </a>
+                    </div>
+                    <i class="far fa-heart hover-icon"></i>
+                    <i class="fas fa-ellipsis-h hover-icon"></i>
+                </div>
+                <div class="controls">
+                    <div class="icon-control">
+                        <i class="fas fa-random song-random hover-icon"></i>
+                        <i class="fas fa-step-forward twirl song-left hover-icon"></i>
+                        <div>
+                            <i class="fab fa-creative-commons-nd icon-main pause"></i>
+                            <i class="far fa-play-circle icon-main btn-play song-play hover-icon-main"></i>
+                        </div>
+                        <i class="fas fa-step-forward song-right hover-icon"></i>
+                        <i class="fas fa-retweet repeat hover-icon"></i>
+                    </div>
+                    <div class="line-play">
+                        <input type="range" class="progress" id="progress" value="0" step="1" min="0" max="100">
+                        <audio id="audio" src="./music/Co-Hen-Voi-Thanh-Xuan-Remix-Monstar-ft-AnhVu-1967-Remix.mp3"></audio>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-microphone mic hover-icon"></i>
+                    <i class="fas fa-volume-up volume hover-icon"></i>
+                    <input type="range" class="volume-input" id="volume-input" value="0" step="1" min="0" max="100">
+                    <i class="fas fa-list list-song-btn hover-icon-main"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list-song">
+        <div class="option">
+            <div class="list-playlist">
+                <span class="list-now list-active">Danh sách phát</span>
+                <span class="list-last">Nghe gần đây</span>
+            </div>
+            <i class="far fa-clock"></i>
+            <i class="fas fa-ellipsis-h hover-icon"></i>
+        </div>
+        <div class="list list-song-main">
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./library/slick/slick.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script type="text/javascript" src="./js/chart.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

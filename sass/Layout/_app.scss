@@ -1,0 +1,352 @@
+
+#app {
+   display: flex;
+}
+
+.main {
+    flex: 1;
+    height: calc(100vh - 90px);
+    overflow: auto;
+    background-color: $primary-color-dark;
+
+    .header {
+        display: flex;
+        position: fixed;
+        left: 240px;
+        top: 0;
+        height: 70px;
+        align-items: center;
+        padding: 0 30px;
+        justify-content: space-between;
+        width: calc(100vw - 240px); 
+        z-index: 30;
+        background-color: $primary-color-dark;
+        
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+            .navigation-btn {
+                display: flex;
+                i {
+                    color: $primary-text-light-blur;
+                    font-size: 20px;
+                }
+                i + i {
+                    margin-left: 16px;
+                }
+            }
+
+            &__search {
+                background-color: $header-color;
+                height: 40px;
+                width: 100%;
+                max-width: 540px;
+                display: flex;
+                align-items: center;
+                border-radius: 999px;
+                margin-left: 16px;
+
+                i {
+                    font-size: 18px;
+                    color: #dadada;
+                    margin-left: 10px;
+                }
+
+                input {
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    padding: 0 15px;
+                    color: #dadada;
+                    flex: 1;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .header-right {
+            display: flex;
+
+            .header-right__item {
+                height: 40px;
+                width: 40px;
+                clip-path: circle(50% at 50% 50%);
+                background-color: $header-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 12px;
+                cursor: pointer;
+            }
+
+            .user {
+                background: url(../../image/avatar.jpg) no-repeat center;
+                background-size: 40px;
+            }
+        }
+    }
+
+    .main-container {
+        margin: 70px 30px 0;
+        width: calc(100% - 60px);
+
+        .gallery {
+            padding-top: 30px;
+
+            .gallery-container {
+                margin: 0 15px;
+
+                .gallery__item {
+                    padding: 0 15px;
+                    width: 33.33333%;
+
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+
+        .content-top100 {
+            margin: 30px 30px 0;
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            &-container {
+    
+                &__list {
+                    
+                    ul {
+                        list-style: none;
+    
+                        li {
+                            a {
+                                text-decoration: none;
+                                display: block;
+
+                                .img {
+                                    overflow: hidden;
+                                    position: relative;
+                                    width: 100%;
+                                    border-radius: 8px;
+                                    display: flex;
+
+                                    div {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: none;
+                                        align-items: center;
+                                        justify-content: space-around;
+                                        background-color: rgba($color: #000000, $alpha: 0.4);
+                                        z-index: 1;
+
+                                        i {
+                                            font-size: 20px;
+                                            color: #dadada;
+                                        }
+
+                                        .icon-main {
+                                            font-size: 40px;
+                                        }
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                        transition: all 0.3s linear;
+                                        overflow: hidden;
+                                    }
+                                }
+                                &:hover {
+                                    img {
+                                        -webkit-transform: scale(1.2); 
+                                        transform: scale(1.2);
+                                    }
+                                    .nag {
+                                        display: flex;
+                                    }
+                                }
+                            
+                                span {
+                                    margin-top: 10px;
+                                    width: 100%;
+                                    display: block;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    margin-right: 15px;
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-radio {
+            margin: 30px;
+        
+            h3 {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+           .container {
+                padding-bottom: 45px;
+                .content-item {
+                    position: relative;
+                    padding: 0 16px;
+
+                    svg {
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        transform: rotate(-90deg);
+                        z-index: 10;
+                    }
+        
+                    .img {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 999px;
+                        }
+                        .nag {
+                            border-radius: 999px;
+                        }
+
+                        .sub {
+                            span {
+                                position: absolute;
+                                z-index: 10;
+                                padding: 0px 16px;
+                                border-radius: 4px;
+                                background-color: red;
+                                text-transform: uppercase;
+                                font-size: 10px;
+                                font-weight: 600;
+                                bottom:-5px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                
+                            }
+
+                            img {
+                                position: absolute;
+                                right: 0;
+                                top: 60%;
+                                width: 30%;
+                                height: auto;
+                                z-index: 10;
+                            }
+                        }
+                    }
+
+                    .title {
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 103%;
+                        text-align: center;
+                        .main-title {
+                            font-size: 14px;
+                            margin: 0;
+                            padding: 0;
+                            text-transform: uppercase;
+                            height: unset;
+                        }
+                        .sub-title {
+                            font-size: 12px;
+                            font-weight: inherit;
+                            color: #666;
+                            bottom: unset;
+                        }
+                    }
+                }
+           }
+        }
+    }
+
+}
+
+@media ( max-width: 1239px) {
+
+}
+
+@media ( max-width: 1023px) {
+    .main {
+        width: calc(100vw - 70px);
+        margin-left: 70px;
+        .header {
+            width: calc(100vw - 70px);
+            left: 70px;
+            z-index: 19;
+        }
+
+        .main-container {
+            margin: 0;
+            margin-top: 70px;
+            width: 100%;
+        }
+    }
+}
+
+@media ( max-width: 739px) {
+
+}
+
+@media ( max-width: 400px) {
+    .main {
+        width: 100%;
+        margin: 0;
+        .header {
+            width: 100%;
+            z-index: 19;
+            justify-content: space-between;
+            left: 0;
+
+            .header-left {
+                justify-content: unset;
+                align-items: unset;
+                .navigation-btn {
+                    display: none;
+                }
+
+                &__search {
+                   margin: 0;
+                }
+            }
+
+            .header-right {
+                .header-right__item {
+                    display: none;
+                }
+
+                .user {
+                    display: inherit;
+                }
+            }
+
+        }
+
+        .main-container {
+            margin: 0;
+            margin-top: 70px;
+            width: 100%;
+        }
+    }
+}
+

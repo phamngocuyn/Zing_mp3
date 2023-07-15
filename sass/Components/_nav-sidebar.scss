@@ -1,0 +1,38 @@
+
+.nav-sidebar {
+    .list-sidebar {
+        .item-sidebar {
+            height: 38px;
+            list-style: none;
+
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                height: 100%;
+                width: 100%;
+
+                i {
+                    margin-left: 30px;
+                    font-size: 2rem;
+                    color: #dadada;
+
+                }
+
+                span {
+                    color: #dadada;
+                    margin-left: 12px;
+                    font-size: 13px;
+                }
+
+                &:hover {
+                    background-color: $primary-color-light-hover;
+                    i,
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
